@@ -1,0 +1,66 @@
+﻿候选编号,所属路线,候选名称,SMILES,对接打分(kcal/mol),XGBoost预测(pKd代理),模型与运行版本,结构文件,备注
+1,路线B yaTCM,Boehmeriasin A,,-9.076,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",Top1.pdb,路线B 对接排名 #1
+2,路线B yaTCM,N-Acetyl-L-cysteine,,-8.71,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",Top2.pdb,路线B 对接排名 #2
+3,路线B yaTCM,Carnosine,[NH3+]CCC(=O)N[C@H](Cc1c[nH+]c[nH]1)C(=O)[O-],-8.592,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",Top3.pdb,"最终选定候选: ① 对接/RF 证据链 (本项目新颖假说), ② ASPA 已知配体 AS9 验证口袋, ③ 肌肽抗 HCC 前期文献; 并经 100 ns MD + MM/PBSA 验证"
+4,路线B yaTCM,Isocitric acid,,-8.435,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",Top4.pdb,路线B 对接排名 #4
+5,路线B yaTCM,Creatine,,-8.423,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",Top5.pdb,路线B 对接排名 #5
+6,路线B yaTCM,gamma-Aminobutyric acid,,-8.306,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #6
+7,路线B yaTCM,Citric acid,,-8.191,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #7
+8,路线B yaTCM,"alpha,beta-Diaminopropionic acid",,-8.09,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #8
+9,路线B yaTCM,"L-alpha,gamma-Diaminobutyric acid",,-8.076,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #9
+10,路线B yaTCM,DMR,,-8.067,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #10
+11,路线B yaTCM,(2R)-2-acetamidoglutaric acid,,-8.019,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #11
+12,路线B yaTCM,1-Iminazolylacetic acid,,-7.988,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #12
+13,路线B yaTCM,Ibotenic acid,,-7.977,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #13
+14,路线B yaTCM,Lysopine,,-7.939,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #14
+15,路线B yaTCM,Buxamine E,,-7.92,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #15
+16,路线B yaTCM,"2-hydroxy-1,2,3-propane tricarboxylic acid-2-ethyl ester",,-7.791,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #16
+17,路线B yaTCM,methyl 3-carboxy-2carboxymethyl-2-hydroxypropanoate,,-7.781,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #17
+18,路线B yaTCM,saccharic acid,,-7.712,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #18
+19,路线B yaTCM,D-arabinonic acid,,-7.567,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #19
+20,路线B yaTCM,#NAME?,,-7.523,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #20; 原始清单名称解析缺失
+21,路线B yaTCM,Tartaric acid,,-7.391,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #21
+22,路线B yaTCM,"(2R,3S)-2-amino-3-hydroxy-succinic acid",,-7.362,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #22
+23,路线B yaTCM,quinic acid,,-7.342,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #23
+24,路线B yaTCM,Taurine,,-7.339,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #24
+25,路线B yaTCM,gamma-Guanidinobutyic acid,,-7.266,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #25
+26,路线B yaTCM,Beta-D-fructofuranose,,-7.217,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #26
+27,路线B yaTCM,ARA,,-7.207,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #27
+28,路线B yaTCM,Quercitol (D-),,-7.204,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #28
+29,路线B yaTCM,"(3S),4-Dihydroxybutyric acid",,-6.965,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #29
+30,路线B yaTCM,HYKOP,,-6.96,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #30
+31,路线B yaTCM,beta-Aminobutyric acid,,-6.947,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #31
+32,路线B yaTCM,Noradrenaline,,-6.831,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #32
+33,路线B yaTCM,stizolamine,,-6.779,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #33
+34,路线B yaTCM,Methyl-alpha-D-fructofuranoside,,-6.721,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #34
+35,路线B yaTCM,Viburnitol,,-6.517,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #35
+36,路线B yaTCM,Imidazolylpropionic acid,,-6.374,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #36
+37,路线B yaTCM,L-Fucitol,,-6.259,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #37
+38,路线B yaTCM,1-Deoxynojirimycin hydrochloride,,-6.218,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #38
+39,路线B yaTCM,Fructose,,-6.027,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #39
+40,路线B yaTCM,Gluconic acid,,-5.897,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #40
+41,路线B yaTCM,1-Deoxy-D-xylitol,,-5.786,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #41
+42,路线B yaTCM,2-Deoxy-D-ribitol1,,-5.491,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #42
+43,路线B yaTCM,Meso-Erythritol,,-4.879,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #43
+44,路线B yaTCM,2-C-Methyl-D-erythritol,,-4.433,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #44
+45,路线B yaTCM,"(3R)-2-hydroxymethylbutane-1,2,3,4-tetrol",,-3.701,,"Schrödinger Glide/IFD 2024-4/2024-1, OPLS_2005",,路线B 对接排名 #45
+46,路线A MolGPT,MGPT_01684,O=C(NC[C@H]1C[C@H]1c1ccccc1)c1cc(Cl)c2c(c1)OCCO2,-7.189,7.086515050654806,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,top1_MGPT_01684.pdb,路线A 综合排名 #1
+47,路线A MolGPT,MGPT_00016,C[C@H]1C[C@H]1c1ccc(OCC(=O)Nc2ccc(C#N)cc2F)cc1,-7.056,7.0090368127203355,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,top2_MGPT_00016.pdb,路线A 综合排名 #2
+48,路线A MolGPT,MGPT_02417,CCc1ccccc1N1CCN(C(=O)[C@@H](O)c2ccc(Cl)cc2)CC1,-6.617,7.102431148715949,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,top3_MGPT_02417.pdb,路线A 综合排名 #3
+49,路线A MolGPT,MGPT_02621,CC(C)Cc1ccc(NC(=O)[C@H]2CCCN(c3ncccn3)C2)cc1,-6.734,7.045746485340429,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,top5_MGPT_02621.pdb,路线A 综合排名 #3
+50,路线A MolGPT,MGPT_04134,O=C(Nc1ccccc1F)c1cccc(OC[C@H]2CCCO2)c1,-6.604,7.185624916343057,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,top3_MGPT_04134.pdb,路线A 综合排名 #3
+51,路线A MolGPT,MGPT_04574,Cc1cccc(NC(=O)c2ccc(N3CCN(C(=O)C4CC4)CC3)cc2)c1,-7.363,6.952257672502846,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #3
+52,路线A MolGPT,MGPT_01451,COc1ccc2cc(C(=O)N3CCC[C@H](NC(=O)C(C)C)C3)ccc2c1,-7.05,6.957134282711367,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #7
+53,路线A MolGPT,MGPT_00104,O=C(Nc1ccc(C(F)(F)F)cn1)c1ccc(N2CCCCC2=O)cc1,-7.117,6.926200783157668,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #8
+54,路线A MolGPT,MGPT_03325,O=C(Nc1ccccc1)[C@@H]1CCCN(C(=O)Nc2ccccc2F)C1,-6.547,7.05078264815333,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #9
+55,路线A MolGPT,MGPT_02574,Cc1cccc(NC(=O)CN(C)C(=O)[C@H]2Cc3c(F)cccc3O2)c1C,-6.481,7.086497423965145,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #10
+56,路线A MolGPT,MGPT_00232,Cc1ccccc1C(=O)NCc1cccc(CC(=O)N2CCCCC2)c1,-6.78,6.927919842517523,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #11
+57,路线A MolGPT,MGPT_00170,C[C@H]1CC[C@H](C)N1C(=O)c1ccc(C(=O)NCc2ccccc2)cc1,-6.667,6.931404514826067,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #12
+58,路线A MolGPT,MGPT_03903,Cc1ccc(CN(C)S(=O)(=O)c2ccc3c(c2)NC(=O)CC3)cc1,-6.967,6.879577134490685,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #12
+59,路线A MolGPT,MGPT_04754,CC(C)c1ccc(NC(=O)CCc2ccc3c(c2)CCO3)nc1,-6.455,7.062733546044501,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #12
+60,路线A MolGPT,MGPT_00245,O=C(NC[C@H]1CCCN1C(=O)c1ccccn1)c1ccc(C(F)(F)F)cc1,-6.648,6.923869509027832,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #15
+61,路线A MolGPT,MGPT_00689,Cc1ccc(NC(=O)NC(=O)COc2ccc(F)cc2)cc1F,-6.417,7.093860280543209,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #15
+62,路线A MolGPT,MGPT_03389,Cc1ccc(N2C[C@@H](C(=O)Nc3ccccc3)CC2=O)cc1C,-6.705,6.906937573413494,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #17
+63,路线A MolGPT,MGPT_01123,Cc1ccc(C(=O)Nc2ccc(C(=O)N3CCCCC3)s2)cc1F,-7.02,6.831066596253024,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #18
+64,路线A MolGPT,MGPT_01310,Cc1cccc(NC(=O)N2CCN(C(=O)c3cccc(C)c3C)CC2)n1,-6.483,6.947290386184685,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #19
+65,路线A MolGPT,MGPT_02662,Cc1ccc(Oc2ccc(C(=O)NC3CCCC3)cc2)cc1,-6.673,6.869660906386501,XGBoost 3.4.1 (xgboost_aspa_final.json) + AutoDock Vina,,路线A 综合排名 #20

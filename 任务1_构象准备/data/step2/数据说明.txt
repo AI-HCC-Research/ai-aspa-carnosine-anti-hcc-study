@@ -1,0 +1,19 @@
+数据说明 - step2 GNN 前置构象过滤输入
+============================================================
+
+数据来源:
+  步骤一 HelixFold3 输出的 5 个 ranked 候选构象及其置信度指标
+  (candidate_summary.csv 复制自 step1/results/summary.csv, 原始数据未改动).
+
+字段说明:
+  model_id            - 候选构象编号 (model 1-1 ~ 1-5)
+  has_clash           - 是否存在原子冲突 (0=无)
+  global_ptm          - 全局 pTM 置信度
+  global_iptm         - 界面 pTM (单链任务为空)
+  global_plddt        - 全局平均 pLDDT (0-100)
+  ranking_confidence  - 平台排序置信度
+
+5 个候选 PDB 结构:
+  candidates/rank1~rank5/predicted_structure.pdb
+  (复制自 step1 包 results/ranked_structures/, 内容未改动,
+   供 src/step2_gnn_conformation_filter.py 直接读取)

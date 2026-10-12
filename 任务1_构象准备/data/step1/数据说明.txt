@@ -1,0 +1,17 @@
+数据说明 - step1 蛋白结构预测输入
+============================================================
+
+数据来源:
+  人源天冬氨酸酰化酶 (Aspartoacylase, ASPA) 氨基酸序列, 共 313 个残基,
+  提交至百度飞桨 HelixFold3 蛋白结构预测云平台进行三维结构预测.
+
+文件说明:
+  sequence.fasta              - ASPA 氨基酸序列 (FASTA 格式, 平台输入)
+  helixfold3_user_input.json  - HelixFold3 平台调用参数记录 (原始返回):
+                                · model_type: HelixFold3 (模型版本 v3.5.8)
+                                · ensemble: 1
+                                · recycle: 10 (结构循环优化次数)
+                                · output_format: pdb
+                                · job_name: pasa
+
+编码格式: UTF-8

@@ -1,0 +1,37 @@
+# ============================================================
+# ASPA 靶向小分子虚拟筛选与 XGBoost 精排 — Python 依赖清单
+# Python 3.9+ (训练于 Python 3.10 / Kaggle 与 Linux 服务器验证)
+# ============================================================
+
+# ---- 核心科学计算 ----
+numpy>=1.23
+pandas>=1.5
+scipy>=1.9
+scikit-learn>=1.2
+matplotlib>=3.6
+joblib>=1.2
+
+# ---- 机器学习模型 ----
+xgboost>=2.0          # 训练版本 3.4.1; 加载 models/xgboost_aspa_final.json 需 >=1.6
+lightgbm>=3.3         # 集成模型(可选, 复现集成时需要)
+catboost>=1.2         # 集成模型(可选, 复现集成时需要)
+optuna>=3.0           # XGBoost 贝叶斯超参优化(复现调参时需要)
+
+# ---- 化学信息学 ----
+rdkit>=2022.9         # pip install rdkit 或 conda install -c conda-forge rdkit
+
+# ---- 深度学习 (仅 MolGPT 训练/生成需要, 精排预测不需要) ----
+torch>=2.0            # MolGPT Transformer 训练 (src/1_molgpt_train.py)
+tqdm>=4.64
+
+# ---- 分子对接 (可选, 复现对接环节时需要) ----
+# vina>=1.2           # pip install vina meeko (AutoDock Vina 批量对接)
+# gnina               # 需从官网安装二进制: https://github.com/gnina/gnina (不可pip)
+
+# ---- 分子动力学 (仅复现 MD 环节需要, 绘图脚本仅需 numpy+matplotlib) ----
+# GROMACS 2025.4 + gmx_MMPBSA 1.6.4 (系统级安装, 非 pip 包)
+
+# 安装示例:
+#   pip install -r requirements.txt
+#   或最小运行环境(仅 predict.py 与绘图):
+#   pip install numpy pandas scikit-learn xgboost rdkit matplotlib joblib

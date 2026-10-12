@@ -1,0 +1,42 @@
+======================================================================
+  训练报告: LEVEL_1_BASELINE
+  生成时间: 2026-08-27 20:40:51
+======================================================================
+
+【方法】 RandomForestClassifier + 三源伪标签(CavityPlus+规则+Zn催化)
+
+【数据集】
+  · n_samples: 45
+  · 正样本(高可药性 y=1): 19
+  · 负样本(低可药性 y=0): 26
+  · 特征数: 23
+
+【模型超参数】
+  · n_estimators: 100
+  · min_samples_split: 3
+  · min_samples_leaf: 2
+  · max_features: 0.6
+  · max_depth: 3
+  · class_weight: balanced
+
+【评估指标】
+  · oob_accuracy: 0.91111
+  · cv5_accuracy_mean: 0.86667
+  · cv5_roc_auc_mean: 0.93778
+  · cv5_f1_mean: 0.82429
+
+【特征重要性 Top 10】
+  排名    特征名                          重要性
+  --------------------------------------------------
+  1     cavity_druggability          0.6147
+  2     hydrophobic_sasa             0.0727
+  3     pocket_depth                 0.0639
+  4     pocket_volume                0.0544
+  5     atom_density                 0.0485
+  6     hydrophobic_ratio            0.0449
+  7     hb_density                   0.0430
+  8     hydrophobic_res_count        0.0152
+  9     hydrophobic_res_ratio        0.0126
+  10    charge_net                   0.0071
+
+【耗时】 17.84 秒

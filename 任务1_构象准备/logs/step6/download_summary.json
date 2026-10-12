@@ -1,0 +1,28 @@
+{
+  "rcsb_pdb_count": 19,
+  "rcsb_pdb_files": [
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\2q33.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\2q34.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\2o4h.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\2o4g.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\3o6g.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\3p9u.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\3p9v.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\4guy.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\4guz.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\4gv0.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\4gv1.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\4m9j.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\4m9k.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\5ukp.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\5ukq.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\5ukr.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\6or1.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\6or2.pdb",
+    "C:\\Users\\21295\\Desktop\\RF\\data\\rcsb_aspa\\6or3.pdb"
+  ],
+  "pdbbind_index_file": null,
+  "pdbbind_index_count": 0,
+  "bindingdb_rows": 0,
+  "chembl_rows": 0
+}

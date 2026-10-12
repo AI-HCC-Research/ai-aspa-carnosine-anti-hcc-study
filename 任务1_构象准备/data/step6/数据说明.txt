@@ -1,0 +1,28 @@
+数据说明 - RF 构象打分系统
+============================================================
+
+1. conformations/  (15 个 PDB)
+   open_conformation_01.pdb ~ open_conformation_15.pdb
+   来源: 步骤四分子动力学模拟 + UMAP 降维后筛出的 15 个开放态代表性构象
+   (conf_01 ~ conf_15), 即步骤五 HDBSCAN 聚类所用的同一批构象.
+
+2. rcsb_aspa/  (19 个 PDB)
+   来源: RCSB PDB 数据库检索到的 ASPA (天冬氨酸酰化酶) 相关实验结构,
+   由 data_downloader.py 自动下载, 用于 Level-2 模型外部数据增强.
+   PDB ID: 2q33, 2q34, 2o4h, 2o4g, 3o6g, 3p9u, 3p9v, 4guy, 4guz,
+           4gv0, 4gv1, 4m9j, 4m9k, 5ukp, 5ukq, 5ukr, 6or1, 6or2, 6or3.
+
+3. raw_csv/  (8 个 CSV)
+   特征提取过程的中间数据表 (口袋几何/理化特征逐口袋记录).
+
+4. ASPA_2I3C.pdb
+   ASPA 参考晶体结构 (PDB: 2I3C).
+
+5. bindingdb_aspa/ chembl_aspa/ pdbbind/
+   外部活性数据库目录. 本次运行中 BindingDB / ChEMBL / PDBbind
+   批量数据未下载成功 (记录数=0), 该情况已如实记录于
+   results/download_summary.json (bindingdb_rows=0, chembl_rows=0,
+   pdbbind_index_count=0); Level-2 增强实际使用 RCSB 的 57 条口袋样本.
+
+数据许可: RCSB PDB 结构遵循 wwPDB 免费使用条款; 本项目数据仅用于
+学术研究, 原始数据库归属与许可见各数据库官网.

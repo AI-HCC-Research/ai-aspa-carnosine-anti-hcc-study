@@ -1,0 +1,35 @@
+数据说明 - step4 分子动力学 (MD) 模拟输出
+============================================================
+
+数据来源:
+  以步骤三预处理后的 ASPA_best_start.pdb 为初始结构,
+  经 biobb GROMACS MD setup 工作流完成溶剂化 (体系标题
+  "Protein in water", 共 56,704 个原子) 并运行分子动力学模拟,
+  产出本步骤全部文件. 执行环境: GROMACS 2024.5 (conda_forge),
+  工作流环境 biobb_wf_md_setup, 生成时间 2026-08-21.
+
+文件清单:
+  biobb.MDsetup.gro          模拟最终构型坐标 (GROMACS gro 格式)
+  biobb.MDsetup.top.pdb      体系拓扑 (PDB 格式导出)
+  biobb.MDsetup.top.zip      体系拓扑打包 (GROMACS top 等拓扑文件压缩包)
+  biobb.MDsetup.tpr          运行输入文件 (含力场参数与全部运行设置,
+                             二进制格式, 可用 gmx dump 查看)
+  biobb.MDsetup.cpt          模拟检查点文件 (续跑/重启用)
+  biobb.MDsetup.xtc          压缩轨迹文件 (约 10.6 MB, 步骤五
+                             UMAP 降维与 HDBSCAN 聚类的构象来源)
+  biobb.MDsetup.energy.xvg   能量随时间变化 (gmx energy 自 md.edr 导出,
+                             含势能/总能量等, 时间单位 ps)
+  biobb.MDsetup.rmsd_first.xvg  骨架 RMSD (相对模拟首帧, 随时间)
+  biobb.MDsetup.rmsd_exp.xvg    骨架 RMSD (相对实验晶体结构, 随时间)
+  biobb.MDsetup.rgyr.xvg     回旋半径 (体系紧密程度, 随时间)
+
+关键指标:
+  模拟时长     500 ps (xvg 时间轴 0 ~ 500 ps)
+  体系规模     56,704 个原子 (蛋白 + 水溶剂)
+  RMSD 收敛    相对实验晶体结构的 RMSD 后期稳定在约 0.16 nm,
+               表明体系在模拟时间内达到平衡、无异常构象漂移
+
+与后续步骤的关系:
+  本步骤 xtc 轨迹经构象抽取得到 15 个代表性构象 (见 step6/conformations/),
+  再由步骤五提取口袋特征 (见 step5/pocket_features.csv),
+  最终供两级随机森林构象打分使用 (见 models/ 与 results/step6/).

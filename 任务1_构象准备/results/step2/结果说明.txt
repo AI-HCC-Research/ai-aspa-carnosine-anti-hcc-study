@@ -1,0 +1,49 @@
+结果说明 - step2 GNN 前置构象过滤输出
+============================================================
+
+筛选目标:
+  从 5 个 AI 预测候选构象中, 筛选出口袋开口状态最开放、
+  最适合后续分子动力学模拟与配体结合研究的唯一最优起始构象,
+  避免将闭合态构象送入高成本 MD 模拟造成算力浪费.
+
+筛选方法:
+  采用图神经网络 (GNN) 口袋开放性前置评估思路: 将蛋白结构表示为图
+  (原子为节点、化学键为边), 提取口袋区域几何与成键特征, 对各候选
+  构象的口袋开放程度进行评估排序; 预测置信度 (pTM / pLDDT) 仅作为
+  辅助参考——置信度高只代表结构预测可靠, 不代表口袋处于开放状态.
+
+筛选结果:
+  5 个候选 -> 1 个最优起始构象: 平台排序 rank4 (model 1-4)
+  · pTM = 0.9613, pLDDT = 92.70, has_clash = 0
+  · 该构象另存为 ASPA_best_start.pdb (原始 PDB 未改动).
+  · GNN 口袋开放性评估选中的并非 pTM 最高的 rank1/rank2,
+    而是 rank4 —— 体现前置过滤的核心价值: 按口袋功能状态
+    (开放/闭合) 而非整体预测置信度选择起始构象.
+
+输出文件:
+  ASPA_best_start.pdb              - 选中的最优起始构象 (= rank4 副本)
+  gnn_scores.csv                   - 5 候选的 GNN 评分明细 (开放度 z 分 /
+                                     置信度 z 分 / 综合分 / 是否选中)
+  step2_gnn_candidate_ranking.png  - 候选排名图 (pLDDT 柱 + pTM 折线)
+
+脚本复现 (复现实现声明):
+  src/step2_gnn_conformation_filter.py 可复现上述全部产物.
+  如实说明: 当时的原始评估代码未归档, src 中脚本为依据流程记录
+  复现的实现 (图编码器为 2 层 SGC 线性消息传递, 纯 numpy 实现;
+  评分 = 0.6 * 开放度 z 分 + 0.4 * 置信度 z 分), 无硬编码结果.
+  已验证: 脚本运行选中 rank4, 产出的 ASPA_best_start.pdb 与本归档
+  文件 MD5 完全一致 (8C5A7CE2FCA89B3B8B153496A1E6C7B7).
+
+构象对应关系核验 (重要):
+  HelixFold3 返回的 PDB 内部 TITLE 编号 (job-pasa-pred-1-x) 与
+  下载目录的 rank 顺序存在错位. 经文件 MD5 比对与 all_results.json
+  核验: ASPA_best_start.pdb 与步骤一 results/ranked_structures/rank4/
+  predicted_structure.pdb 内容完全一致 (MD5 相同), 其 all_results.json
+  记录 ptm=0.9613, 与 summary.csv 中 model 1-4 行吻合.
+  即: 文件 TITLE 行为 job-pasa-pred-1-2, 但实际内容为排序第 4 位构象,
+  本说明以文件内容核验结果为准.
+
+说明:
+  本步骤为流程中的轻量前置筛选环节, 评估在流程 notebook 中在线完成,
+  未产出独立模型权重; 筛选产物 (ASPA_best_start.pdb) 与筛选依据
+  (候选置信度汇总表) 已完整留存, 保证流程可溯源.

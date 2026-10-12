@@ -1,0 +1,48 @@
+======================================================================
+  训练报告: LEVEL_2_ENHANCED
+  生成时间: 2026-08-27 20:41:04
+======================================================================
+
+【方法】 RandomForestClassifier + 特征加权 + RCSB外部数据增强
+
+【数据集】
+  · n_samples_local: 45
+  · n_samples_augmented_rcsb: 57
+  · n_samples_total: 102
+  · 正样本(高可药性 y=1): 52
+  · 负样本(低可药性 y=0): 50
+  · 特征数: 23
+
+【模型超参数】
+  · n_estimators: 400
+  · max_depth: 6
+  · min_samples_split: 2
+  · min_samples_leaf: 1
+  · max_features: sqrt
+  · class_weight: balanced_subsample
+  · oob_score: True
+  · random_state: 42
+  · n_jobs: -1
+
+【评估指标】
+  · oob_accuracy: 0.94118
+  · cv5_accuracy_mean: 0.92048
+  · cv5_roc_auc_mean: 0.982
+  · cv5_f1_mean: 0.91633
+  · OOB提升(vs Level1): 0.03007
+
+【特征重要性 Top 10】
+  排名    特征名                          重要性
+  --------------------------------------------------
+  1     cavity_druggability          0.2699
+  2     hydrophobic_sasa             0.1690
+  3     pocket_volume                0.1193
+  4     atom_density                 0.1101
+  5     opening_area_est             0.0606
+  6     hb_density                   0.0325
+  7     pocket_depth                 0.0304
+  8     hydrophobic_res_ratio        0.0290
+  9     hydrophobic_ratio            0.0287
+  10    hb_total                     0.0236
+
+【耗时】 12.74 秒

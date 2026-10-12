@@ -1,0 +1,64 @@
+{
+  "level": "LEVEL_1_BASELINE",
+  "method": "RandomForestClassifier + 三源伪标签(CavityPlus+规则+Zn催化)",
+  "n_samples": 45,
+  "n_positive": 19,
+  "n_negative": 26,
+  "n_features": 23,
+  "feature_names": [
+    "pocket_volume",
+    "pocket_depth",
+    "hydrophobic_sasa",
+    "atom_density",
+    "opening_area_est",
+    "hydrophobic_ratio",
+    "hbd_count",
+    "hba_count",
+    "hb_total",
+    "hb_density",
+    "pos_charge_count",
+    "neg_charge_count",
+    "charge_net",
+    "charge_total",
+    "aromatic_count",
+    "hydrophobic_res_count",
+    "hydrophobic_res_ratio",
+    "zn_coord_score",
+    "catalytic_completeness",
+    "his_in_pocket",
+    "asp_in_pocket",
+    "glu_in_pocket",
+    "cavity_druggability"
+  ],
+  "rf_params": {
+    "n_estimators": 200,
+    "min_samples_split": 5,
+    "min_samples_leaf": 3,
+    "max_features": 0.6,
+    "max_depth": 3,
+    "class_weight": null
+  },
+  "metrics": {
+    "oob_accuracy": 0.88889,
+    "cv5_accuracy_mean": 0.88889,
+    "cv5_roc_auc_mean": 0.95,
+    "cv5_f1_mean": 0.84333
+  },
+  "feature_importance_top10": {
+    "cavity_druggability": 0.5923,
+    "hydrophobic_sasa": 0.0875,
+    "pocket_depth": 0.0742,
+    "hb_density": 0.0655,
+    "hydrophobic_ratio": 0.0563,
+    "atom_density": 0.042,
+    "pocket_volume": 0.0357,
+    "hydrophobic_res_ratio": 0.0136,
+    "opening_area_est": 0.0086,
+    "hb_total": 0.0054
+  },
+  "label_info_summary": {
+    "median_druggability": 10.05,
+    "positive_ratio": 0.422
+  },
+  "train_time_sec": 27.54
+}

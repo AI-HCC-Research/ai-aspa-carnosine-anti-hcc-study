@@ -1,0 +1,26 @@
+结果说明 - step1 蛋白结构预测输出
+============================================================
+
+平台与模型:
+  HelixFold3 (百度飞桨 PaddleHelix, 模型版本 v3.5.8), 云端在线调用,
+  属于 AlphaFold 系列同源的深度学习蛋白质结构预测模型.
+
+输出文件:
+  summary.csv                - 5 个候选构象的置信度汇总
+  ranked_structures/rank1~5/ - 平台返回的 5 个 ranked 构象, 每个含:
+      predicted_structure.pdb  预测三维结构 (PDB, B-factor 列为逐残基 pLDDT)
+      all_results.json         平台完整预测结果
+      chain_id_mapping.csv     链标识映射表
+  HelixFold3_Terms_of_Use.md  - 平台使用条款 (原始返回)
+
+关键结果 (摘自 summary.csv, 原始数据未改动):
+  rank1 (model 1-1): pTM=0.9616, pLDDT=92.69
+  rank2 (model 1-2): pTM=0.9616, pLDDT=92.70
+  rank3 (model 1-3): pTM=0.9615, pLDDT=92.69
+  rank4 (model 1-4): pTM=0.9613, pLDDT=92.70
+  rank5 (model 1-5): pTM=0.9612, pLDDT=92.69
+  全部候选无原子冲突 (has_clash=0).
+
+指标含义:
+  pTM   - 全局模板建模分数, 衡量整体结构(尤其相对取向)置信度, 越高越好
+  pLDDT - 逐残基局部置信度 (0-100), >90 为高置信度

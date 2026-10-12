@@ -1,0 +1,35 @@
+训练运行环境与可复现性记录
+============================================================
+
+随机种子:
+  · Level-2 Enhanced RF: random_state = 42 (见 rf_trainer.py 与
+    results/rf_conformation_result.json 中 RF 参数)
+  · 所有数据划分、bootstrap 采样均在该种子下进行.
+
+模型与关键超参数 (Level-2):
+  · RandomForestClassifier, n_estimators=400, max_depth=6,
+    min_samples_split=2, min_samples_leaf=1, max_features="sqrt",
+    class_weight="balanced_subsample", oob_score=True, n_jobs=-1.
+
+Level-1 Baseline:
+  · n_estimators=100, max_depth=3, min_samples_split=3,
+    min_samples_leaf=2, max_features=0.6, class_weight="balanced".
+
+评估方式:
+  · OOB (袋外) 准确率 + 5 折交叉验证 (accuracy / ROC-AUC / F1).
+
+运行耗时 (本机实测, 见训练报告):
+  · Level-1: 17.84 秒; Level-2: 12.74 秒.
+
+标签构建 (三源投票伪标签, ≥2 票为正样本):
+  · 源1: CavityPlus 可药性评分 > 中位数
+  · 源2: 0-10 启发式规则打分 ≥ 7
+  · 源3: Zn 配位 + 催化残基完整性 ≥ 5 分
+
+数据规模:
+  · Level-1: 45 条 (15 构象 × 3 口袋; 正 19 / 负 26)
+  · Level-2: 102 条 (本地 45 + RCSB 增强 57; 正 52 / 负 50)
+
+第三方数据/平台:
+  · RCSB PDB (19 个 ASPA 相关结构, 下载清单见 results/download_summary.json)
+  · scikit-learn RandomForestClassifier; CavityPlus 可药性评分.
